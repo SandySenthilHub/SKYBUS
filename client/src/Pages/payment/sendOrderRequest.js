@@ -48,7 +48,7 @@ export const sendOrderRequest = async (
   };
 
   try {
-    await axios.post("https://sky-bus-1.onrender.com/order", payload, {
+    await axios.post("https://skybus-client.onrender.com/order", payload, {
       headers: { Authorization: `Bearer ${token}` },
     });
 

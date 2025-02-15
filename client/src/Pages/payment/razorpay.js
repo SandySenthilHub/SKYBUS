@@ -38,7 +38,7 @@ export const initPayment = (
     handler: async function (response) {
       try {
         const { data } = await axios.post(
-          "https://sky-bus-1.onrender.com/api/payment/verify",
+          "https://skybus-client.onrender.com/api/payment/verify",
           response
         );
 
