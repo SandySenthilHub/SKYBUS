@@ -6,10 +6,13 @@ import {
 import axios from "axios";
 import Cookies from "js-cookie";
 import { error, success } from "../../Utils/notification";
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
+
 
 export const loginAPI = (data, navigate) => async (dispatch) => {
   try {
-    const response = await axios.post("http://localhost:8080/user/login", data);
+    const response = await axios.post(`${BASE_URL}/user/login`, data);
 
     if (response.data.status === "Failed") {
       error(response.data.message);
