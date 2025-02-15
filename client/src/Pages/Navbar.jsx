@@ -54,7 +54,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link active"
-                style={{ cursor: "pointer", fontSize:'24px', marginLeft:'10px' }}
+                style={{ cursor: "pointer", fontSize:'24px', marginLeft:'0px' }}
                 onClick={() => navigate(`/myticket`)}
               >
                 My Tickets
@@ -68,7 +68,7 @@ const Navbar = () => {
                 style={{
                   borderRadius: "10px",
                   border: "2px solid",
-                  marginRight: "8px",
+                  marginRight: "0px",
                   color: "white",
                   fontSize:'24px'
                 }}
